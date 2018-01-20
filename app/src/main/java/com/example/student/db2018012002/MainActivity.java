@@ -33,6 +33,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void click3(View v)
     {
         ToggleButton tb = findViewById(R.id.toggleButton);
-        tb.isChecked();
+        if (tb.isChecked())
+        {
+            Toast.makeText(this, "開關有開", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Toast.makeText(this, "開關關閉", Toast.LENGTH_SHORT).show();
+        }
     }
 }
