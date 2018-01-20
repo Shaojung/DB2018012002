@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,5 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             Toast.makeText(this, "Click222222", Toast.LENGTH_SHORT).show();
         }
+    }
+    public void click3(View v)
+    {
+        ToggleButton tb = findViewById(R.id.toggleButton);
+        tb.isChecked();
     }
 }
