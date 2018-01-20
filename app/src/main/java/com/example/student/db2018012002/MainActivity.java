@@ -13,11 +13,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn = findViewById(R.id.button);
+        Button btn2 = findViewById(R.id.button2);
         btn.setOnClickListener(this);
+        btn2.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        Toast.makeText(this, "Click1", Toast.LENGTH_SHORT).show();
+        if (v.getId() == R.id.button)
+        {
+            Toast.makeText(this, "Click1", Toast.LENGTH_SHORT).show();
+        }
+        if (v.getId() == R.id.button2)
+        {
+            Toast.makeText(this, "Click222222", Toast.LENGTH_SHORT).show();
+        }
     }
 }
