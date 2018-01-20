@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Switch;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -34,6 +35,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         ToggleButton tb = findViewById(R.id.toggleButton);
         if (tb.isChecked())
+        {
+            Toast.makeText(this, "開關有開", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Toast.makeText(this, "開關關閉", Toast.LENGTH_SHORT).show();
+        }
+    }
+    public void click4(View v)
+    {
+        Switch sw = findViewById(R.id.switch1);
+        if (sw.isChecked())
         {
             Toast.makeText(this, "開關有開", Toast.LENGTH_SHORT).show();
         }
